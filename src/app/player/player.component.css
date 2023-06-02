@@ -1,0 +1,17 @@
+.progress{ height: .35rem;}
+.text-artist{
+    color: dimgray;
+}
+div>.btn.radio:hover .text-artist,.text-artist:hover, .btn.radio.active .text-artist{
+    color: whitesmoke;
+}
+.card-footer.bg-primary, 
+.card-footer.bg-danger, 
+.card-footer.bg-dark 
+{
+    opacity: .9;
+}
+.badge{
+
+    background-image: var(--bs-gradient);
+}

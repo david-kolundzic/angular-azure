@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `<div>Hello {{value}}, </div> <div>test publish na Azure static web app</div>`,
+  template: `
+  <app-nav-menu></app-nav-menu>
+  <app-player></app-player>`,
 })
 export class AppComponent {
   value = 'World';
