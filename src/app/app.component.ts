@@ -13,6 +13,9 @@ export class AppComponent {
   value = 'World';
   constructor(private http: HttpClient){
     this.http.get('/api/message?name=david').subscribe(
-    (resp: any) => this.message = resp.text );
+    (resp: any) => {
+      console.log(resp)
+      this.message = resp
+    } );
   }
 }
