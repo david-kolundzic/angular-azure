@@ -15,7 +15,7 @@ export class AppComponent {
     this.http.get('/api/message?name=david').subscribe({
       next: (resp: any) => {
       console.log(resp)
-      this.message = resp
+      this.message = resp.json();
     } });
   }
 }
