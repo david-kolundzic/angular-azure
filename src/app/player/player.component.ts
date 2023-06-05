@@ -75,7 +75,7 @@ export class PlayerComponent implements OnInit {
     this.songThumb = "";
     
     // this.audioService.playStream(urlString.replace('http://', '/broadcast/')).subscribe((ev) => {
-    this.audioService.playStream(urlString).subscribe((ev) => {
+    this.audioService.playStream(urlString.replace('http:','')).subscribe((ev) => {
       // console.log("PLAY")
       // console.log(ev);
 
