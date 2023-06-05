@@ -12,8 +12,9 @@ export class AppComponent {
   message=''
   value = 'World';
   constructor(private http: HttpClient){
-    this.http.get('/api/message?name=david').subscribe({
+    this.http.get('/api/message?name=david', {responseType:'text'}).subscribe({
       next: (resp: any) => {
+        console.log("PORUKA");
       console.log(resp)
       this.message = resp.toString();
     } });
