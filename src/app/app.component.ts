@@ -12,7 +12,7 @@ export class AppComponent {
   message=''
   value = 'World';
   constructor(private http: HttpClient){
-    this.http.get('/api/message').subscribe(
+    this.http.get('/api/message?name=david').subscribe(
     (resp: any) => this.message = resp.text );
   }
 }
