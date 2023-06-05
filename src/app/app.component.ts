@@ -12,10 +12,10 @@ export class AppComponent {
   message=''
   value = 'World';
   constructor(private http: HttpClient){
-    this.http.get('/api/message?name=david').subscribe(
-    (resp: any) => {
+    this.http.get('/api/message?name=david').subscribe({
+      next: (resp: any) => {
       console.log(resp)
       this.message = resp
-    } );
+    } });
   }
 }
