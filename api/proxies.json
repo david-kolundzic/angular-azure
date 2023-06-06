@@ -6,7 +6,7 @@
           "methods": [ "GET" ],
           "route": "/broadcast/{*restOfPath}"
         },
-        "backendUri": "{restOfPath}"
+        "backendUri": "http://{restOfPath}"
       }
     }
   }
