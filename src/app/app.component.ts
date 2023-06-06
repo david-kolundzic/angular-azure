@@ -29,7 +29,7 @@ export class AppComponent {
       next: (resp: any) => {
         console.log("PORUKA HELLO");
         console.log(resp)
-        this.messageHello = resp.toString();
+        this.messageHello = resp.text;
       } 
     });
 
